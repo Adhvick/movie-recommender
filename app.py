@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 import difflib
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -65,4 +66,5 @@ if st.button("Recommend"):
                 
                 > {movie['overview'][:200]}...
                 ---
+
                 """)
